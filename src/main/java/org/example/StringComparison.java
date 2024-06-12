@@ -5,7 +5,7 @@ public class StringComparison {
         String a = new String("test");
         String b = new String("test");
 
-        // This will be caught by Error Prone
+        // Error-prone - waring: ReferenceEquality
         if (a == b) {
             System.out.println("Strings are the same");
         } else {
